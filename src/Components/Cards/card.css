@@ -1,0 +1,117 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    width: 300px;
+    height: 380px;
+    background-color:white;
+    box-shadow: 3px 4px 3px 7px rgb(248, 210, 210); 
+    margin: 7px;
+    border-radius: 5px;
+    position: relative;
+    
+    
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    
+    
+}
+.describtion{
+   
+    display: grid;
+    grid-template-columns:60px 1fr;
+   
+}
+.describtion img{
+    width: 50px ;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+.describtion h3{
+    margin-top: 0;
+    font-size: 20px;
+    
+   
+}
+p{
+    font-size: 16px;
+   
+   
+   
+
+} 
+.profile{
+    
+    
+    vertical-align: top;
+    margin-top: 10px;
+}
+.text{
+    text-align: start;
+    width: 280px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.text h4{
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.text h3{
+    padding-right: 70px;
+    font-size: 19px;
+    font-weight: 500;
+}
+.time{
+    background-color: black;
+    position: absolute;
+   padding: 2px 4px;
+     bottom: 190px;
+    right: 10px;
+    
+    justify-content: center;
+}
+.time p{
+    color: white;
+
+    
+
+}
+.text button{
+    display: inline-block;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 150px;
+
+}
+.text button:hover{
+    background-color: rgb(253, 70, 70);
+}
+
+
+ @media (max-width:725px){
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+} 
+
+
+ 
+    
+    
+     
