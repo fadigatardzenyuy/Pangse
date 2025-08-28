@@ -1,10 +1,13 @@
 import React from "react";
 import "./hero.css";
 import Cards from "../Cards/card";
-function Hero  (){
+
+// Receive sidebar state as a prop
+function Hero  ({ sidebar }){
     return(
         <div className="hero">
-            <div className="side-bar">
+            {/* Conditionally apply the active class based on the sidebar state */}
+            <div className={sidebar ? "side-bar active" : "side-bar"}>
                 <div className="explor">
                     <img src="Assets/Icons/home.png" alt="Home" />
                     <h5>Home</h5>

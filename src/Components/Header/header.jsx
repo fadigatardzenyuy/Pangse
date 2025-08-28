@@ -1,10 +1,13 @@
 import React from "react";
 import "./header.css";
-function Header(){
+
+// Receive handleSidebar function as a prop
+function Header({ handleSidebar }){
     return(
         <header>
             <div className="left-section">
-                 <img className="menu"  src="Assets/Icons/men.png" alt="this is the menu" />
+                {/* Call handleSidebar function on click */}
+                 <img className="menu" onClick={handleSidebar} src="Assets/Icons/men.png" alt="this is the menu" />
              <img className="logo" src="Assets/Icons/logo2.png" alt="this is the logo" />
 
             </div>

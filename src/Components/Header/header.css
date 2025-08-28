@@ -34,14 +34,23 @@ header{
 .menu{
     margin-top: 10px;
     cursor: pointer;
+    /* Hide the hamburger menu by default */
+    display: none;
         
     }
+
+/* Show the hamburger menu on smaller screens */
+@media (max-width: 725px){
+    .menu{
+        display: block;
+    }
+}
 .midle-section{
     
     flex: 1;
-    max-width: 600px;
     display: flex;
     align-items: center;
+    margin: 0 10px;
     
 }
 .right-section{
@@ -52,6 +61,22 @@ header{
     justify-content: space-between;
     flex-shrink: 0;
     position: relative;
+}
+
+@media (max-width: 725px){
+    .right-section{
+        width: auto;
+        margin-right: 10px;
+    }
+    .right-section .plus,
+    .right-section .dot,
+    .right-section .not-s{
+        display: none;
+    }
+    .left-section{
+        width: auto;
+        margin-left: 10px;
+    }
 }
 img{
     height: 40px;
