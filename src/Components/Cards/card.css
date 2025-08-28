@@ -12,8 +12,13 @@
     margin: 7px;
     border-radius: 5px;
     position: relative;
+    transform: 0.5s;
     
     
+}
+.card:hover{
+    width:320px;
+    height:400px;
 }
 .card img{
     width: 100%;
