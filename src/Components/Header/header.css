@@ -112,21 +112,18 @@ img{
 }
 .nots{
     animation-name: animation;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
 }
 @keyframes animation{
-    0%{transform:translatex(0px);}
-    25%{transform:translatex(-10px) ;}
-    50%{transform:translatex(20px) ;}
-    75%{transform:translatex(10px) ;}
-    100%{transform:translatex(0px) ;}
-    0%{rotate: 90deg;}
+    0%{transform:translatex(0deg);}
+    25%{transform:translatex(180deg) ;}
+    50%{transform:translatex(360deg) ;}
+    75%{transform:translatex(-180deg) ;}
+    100%{transform:translatex(0deg) ;}
+    75%{transform: rotate(55deg);}
+    100%{transform: rotate(0deg);} 
 }
 
- @media (max-width:1020px){
-    header{
-        display: flex;
-         flex-wrap: wrap;
 
-    }
-} 
+
+ 

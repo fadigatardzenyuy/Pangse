@@ -21,6 +21,7 @@
 .explor{
     height: 95px;
     cursor: pointer;
+    transition: 0.44s;
 }
 .explor:hover{
     background-color: rgb(241, 234, 234);
@@ -51,15 +52,29 @@
         display: flex;
         flex-direction: column;
     }
-} 
+}  
 
  @media (max-width:1024px){
-    .container{
-        /* display: grid;
-        grid-template-columns: 2, 1fr; */
-        display: flex;
+    .container{ 
+         /* display: grid;
+        grid-template-columns: 2, 1fr;  */
+         display: flex;
         flex-wrap: wrap;
         
     }
     
-} 
+}  
+
+/* @media (max-width:1024){
+    .containmer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:725px){
+    .containmer{
+        display: flex;
+       flex-direction: column;
+    }
+} */

@@ -19,7 +19,7 @@ function Cards({Image, profile,Tittle, time, year, men, bot}){
    <h3>{Tittle}</h3>
             <h4>{time}</h4>
            <h4>{year}</h4>
-           <button>{bot}</button>
+           <a href="https://www.youtube.com/"><button>{bot}</button></a> 
             </div>
             
                 </div>
